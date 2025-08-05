@@ -1,66 +1,62 @@
-# 🐧 Linux Command Explorer - بالعربي
+# 🐧 Linux Command Explorer (Arabic)
 
-أداة بسيطة تشتغل من الطرفية (Terminal) بتشرح أوامر لينكس بالعربي، بسرعة وسهولة، للمبتدئين وكل المهتمين بتعلم لينكس.
+A simple command-line tool that explains Linux commands in **Arabic**.  
+Perfect for beginners and Arabic-speaking users learning Linux through the terminal.
 
 ---
 
-## ✨ مثال على الاستخدام:
+## ✨ Example Usage
 
 ```bash
 explore ls
-🔹 يطبع شرح مبسط باللغة العربية للأمر ls مع أمثلة استخدام.
+📘 This prints a simple Arabic explanation of the ls command, including usage examples.
 
-⚙️ خطوات التثبيت:
-1. استنساخ المشروع:
-bash
-Copy
-Edit
+# ⚙️ Installation
+## 1. Clone the repository:
+
 git clone https://github.com/YOUR_USERNAME/linux-command-explorer.git
 cd linux-command-explorer
-2. تثبيت الأداة على جهازك:
-bash
-Copy
-Edit
+
+## 2. Install the tool:
+
 chmod +x explore.sh
 cp explore.sh ~/.local/bin/explore
 
-# إنشاء مجلد لتخزين قاعدة البيانات
+# Create folder for the command database
+
 mkdir -p ~/.local/share/linux-command-explorer
 cp commands.txt ~/.local/share/linux-command-explorer/
-3. تأكد إن ~/.local/bin في PATH:
-bash
-Copy
-Edit
+
+## 3. Ensure ~/.local/bin is in your PATH:
+
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
-🧪 استخدام الأداة:
-bash
-Copy
-Edit
+
+# 🧪 How to Use
+## Run:
+
+explore COMMAND_NAME
+
+### Example:
+
 explore cd
-🔹 هيطبع شرح للأمر cd من قاعدة البيانات.
+It will print a description and usage examples (in Arabic) for the specified command.
 
-✍️ إضافة أوامر جديدة:
-افتح الملف:
+# 🛠️ Add New Commands
+## Open the database file:
 
-bash
-Copy
-Edit
 nano ~/.local/share/linux-command-explorer/commands.txt
-ثم أضف بالشكل التالي:
 
-bash
-Copy
-Edit
+###Add new commands in the following format:
 :command
-شرح بالعربي للأمر...
-أمثلة:
-  command arg1      # مثال 1
-  command -x        # مثال 2
-🤝 المساهمة:
-مرحب بأي حد يشارك بإضافة أوامر جديدة أو تطوير السكريبت، افتح Pull Request أو Issue بأي اقتراح.
+Arabic description of the command.
+Examples:
+  command arg1        # Example 1
+  command -x          # Example 2
+⚠️ Make sure each command starts with : and is followed by a blank line after its section.
 
-📜 مثال للأوامر المتاحة حالياً:
+# 📋 Included Commands (Examples)
+
 ls
 
 cd
@@ -81,26 +77,28 @@ pwd
 
 echo
 
-💡 أفكار مستقبلية:
-دعم البحث بالكلمات (مش بس اسم الأمر)
+# 💡 Future Improvements
+Search by keyword (not just command name)
 
-دعم أكثر للغة العربية بتنسيقات وألوان
+Colorful output using ANSI formatting
 
-نسخة Python تدعم ملفات JSON
+Switch to JSON database and use Python
 
-ربط بالأوامر من مصادر خارجية أو الذكاء الاصطناعي
+Integration with AI to explain unknown commands
 
-📄 الترخيص:
-مشروع مفتوح المصدر ❤️
+# 🤝 Contributing
+Pull requests are welcome!
+Feel free to suggest new features, fix issues, or add more command explanations.
 
-yaml
-Copy
-Edit
+# 📄 License
+Open Source ❤️
 
 ---
 
-## ✅ الخطوة الجاية:
+## ✅ What to do now:
 
-- عدّل السطر ده في السكريبت:
-  ```bash
-  DB_FILE="$HOME/.local/share/linux-command-explorer/commands.txt"
+1. Replace `YOUR_USERNAME` with your GitHub username.
+2. Save the file as `README.md` in the project root.
+3. Add and push it to GitHub:
+
+```bash
