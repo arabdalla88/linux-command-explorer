@@ -8,46 +8,81 @@ Perfect for beginners and Arabic-speaking users learning Linux through the termi
 ## ✨ Example Usage
 
 ```bash
+
 explore ls
 📘 This prints a simple Arabic explanation of the ls command, including usage examples.
 
+```
+
 # ⚙️ Installation
+
 ## 1. Clone the repository:
+
+```bash
 
 git clone https://github.com/YOUR_USERNAME/linux-command-explorer.git
 cd linux-command-explorer
 
+```
+
 ## 2. Install the tool:
+
+```bash
 
 chmod +x explore.sh
 cp explore.sh ~/.local/bin/explore
 
+```
+
 # Create folder for the command database
+
+```bash
 
 mkdir -p ~/.local/share/linux-command-explorer
 cp commands.txt ~/.local/share/linux-command-explorer/
 
+```
+
 ## 3. Ensure ~/.local/bin is in your PATH:
+
+```bash
 
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
+```
+
 # 🧪 How to Use
 ## Run:
 
+```bash
+
 explore COMMAND_NAME
 
+```
+
 ### Example:
+
+```bash
 
 explore cd
 It will print a description and usage examples (in Arabic) for the specified command.
 
+```
+
 # 🛠️ Add New Commands
 ## Open the database file:
 
+```bash
+
 nano ~/.local/share/linux-command-explorer/commands.txt
 
+```
+
 ###Add new commands in the following format:
+
+```bash
+
 :command
 Arabic description of the command.
 Examples:
@@ -55,7 +90,11 @@ Examples:
   command -x          # Example 2
 ⚠️ Make sure each command starts with : and is followed by a blank line after its section.
 
+```
+
 # 📋 Included Commands (Examples)
+
+```bash
 
 ls
 
@@ -77,6 +116,8 @@ pwd
 
 echo
 
+```
+
 # 💡 Future Improvements
 Search by keyword (not just command name)
 
@@ -92,13 +133,3 @@ Feel free to suggest new features, fix issues, or add more command explanations.
 
 # 📄 License
 Open Source ❤️
-
----
-
-## ✅ What to do now:
-
-1. Replace `YOUR_USERNAME` with your GitHub username.
-2. Save the file as `README.md` in the project root.
-3. Add and push it to GitHub:
-
-```bash
