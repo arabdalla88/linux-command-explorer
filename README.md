@@ -29,17 +29,10 @@ cd linux-command-explorer
 
 ```bash
 
-chmod +x explore.sh
+mkdir -p ~/.local/bin
 cp explore.sh ~/.local/bin/explore
-
-```
-
-# Create folder for the command database
-
-```bash
-
-mkdir -p ~/.local/share/linux-command-explorer
-cp commands.txt ~/.local/share/linux-command-explorer/
+cp command-db.txt ~/.local/bin/
+chmod +x ~/.local/bin/explore
 
 ```
 
@@ -133,3 +126,4 @@ Feel free to suggest new features, fix issues, or add more command explanations.
 
 # 📄 License
 Open Source ❤️
+
